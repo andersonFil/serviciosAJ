@@ -1,0 +1,150 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ServiciosAJ - Reparación de Equipos Electrónicos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-tools"></i>
+        <span>ServiciosAJ</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#solicitud">Solicitar Servicio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>Expertos en Reparación de Equipos Electrónicos y Electrodomésticos</h1>
+        <p>Servicio profesional a domicilio con garantía</p>
+        <a href="#solicitud" class="cta-button animate-pulse">Solicitar Servicio</a>
+      </div>
+    </section>
+    <section id="servicios" class="services">
+      <h2>Nuestros Servicios</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Teléfonos Móviles</h3>
+          <p>Reparación de pantallas, baterías y más</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-laptop"></i>
+          <h3>Computadoras</h3>
+          <p>Mantenimiento y reparación de laptops y PC</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-tv"></i>
+          <h3>Electrodomésticos</h3>
+          <p>Reparación de televisores y equipos del hogar</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="solicitud" class="request-form">
+      <h2>Solicitar Servicio</h2>
+      <form id="serviceForm">
+        <div class="form-group">
+          <label for="name">Nombre completo</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">            
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" required>
+        <div class="form-group">
+          <label for="device">Tipo de dispositivo</label>
+          <select id="device" required>
+            <option value="">Seleccione una opción</option>
+            <option value="mobile">Teléfono móvil</option>
+                  </div>
+            <option value="computer">Computadora</option>
+            <option value="appliance">Electrodoméstico</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="problem">Descripción del problema</label>
+          <textarea id="problem" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-button" id="submitBtn">Enviar solicitud</button>
+      </form>
+    </section>
+
+    <section id="testimonios" class="testimonials">
+      <h2>Testimonios</h2>
+      <div class="testimonials-slider">
+        <!-- Los testimonios se cargarán dinámicamente -->
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+          <h2>Contáctanos</h2>
+    <p>Estamos disponibles para ayudarte</p
+       <div class="contact-buttons">
+          <a href="mailto:serviciosaj@gmail.com" class="contact-btn gmail animate-pulse">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>Gmail</a>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="faq-container">
+        <!-- Las preguntas frecuentes se cargarán dinámicamente -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>ServiciosAJ</h3>
+        <p>Expertos en reparación de equipos electrónicos y electrodomésticos</p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces rápidos</h3>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#solicitud">Solicitar Servicio</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://facebook.com/serviciosaj" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com/serviciosaj" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/serviciosaj" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 ServiciosAJ. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
